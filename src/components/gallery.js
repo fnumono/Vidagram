@@ -42,7 +42,7 @@ class Gallery extends Component
                   <div className='row'>
                   {
             this.props.imgUrls.map((url, index) => {
-               return <div className='col-sm-6 col-md-3 col-xl-2'>
+               return <div className='col-sm-6 col-md-3 col-xl-2' key={url}>
                   <div className='gallery-card'>
                     <GalleryImage className='gallery-thumbnail' src={url} alt={'Image number ' + (index + 1)} />
 
